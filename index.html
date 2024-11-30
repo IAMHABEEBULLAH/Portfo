@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">My Portfolio</h1>
+            <nav>
+                <a href="about.html" class="mx-2 text-gray-700 hover:text-gray-900">About</a>
+                <a href="#projects" class="mx-2 text-gray-700 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="mx-2 text-gray-700 hover:text-gray-900">Contact</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <!-- Display Picture -->
+            <div class="flex justify-center mb-6">
+                <img src="assets/dp.jpg" alt="Your Name" class="w-40 h-40 rounded-full shadow-lg border-4 border-white custom-shadow">
+            </div>
+            <!-- Text Content -->
+            <h2 class="text-4xl font-bold mb-4">Hi, I'm NovaSparks</h2>
+            <p class="text-lg text-gray-700">A passionate web developer specializing in frontend and backend development.</p>
+            <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700">
+                View My Work
+            </a>
+        </div>
+    </section>
+    <!-- View My Work Section -->
+<section id="projects" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">My Work</h2>
+        <p class="text-lg text-gray-700 mb-8">Here are some of the projects I've worked on:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/project1.webp" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                    <p class="text-gray-700 mb-4">A brief description of this project goes here.</p>
+                    <a href="project1.html" class="text-blue-600 font-semibold hover:underline">View Details</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/project2.webp" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                    <p class="text-gray-700 mb-4">A brief description of this project goes here.</p>
+                    <a href="project2.html" class="text-blue-600 font-semibold hover:underline">View Details</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                    <p class="text-gray-700 mb-4">A brief description of this project goes here.</p>
+                    <a href="project3.html" class="text-blue-600 font-semibold hover:underline">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
